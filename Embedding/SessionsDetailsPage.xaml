@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:ff="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
+    x:Class="Embedding.SessionsDetailsPage"
+    Title="Session Details">
+    <Grid
+        Padding="24,48">
+        <Label
+            Text="{Binding Details.Title}"
+            FontSize="32"
+            TextColor="#3574FA"
+            HorizontalTextAlignment="Center" />
+        <Label
+            Text="{Binding Details.Description}"
+            FontSize="16"
+            TextColor="#3574FA"
+            HorizontalTextAlignment="Center"
+            VerticalOptions="End" />
+        <ff:CachedImage
+            VerticalOptions="Center"
+            HorizontalOptions="Fill"
+            HeightRequest="160"
+            Aspect="Fill"
+            Source="{Binding Details.ImageUrl}" />
+    </Grid>
+</ContentPage>

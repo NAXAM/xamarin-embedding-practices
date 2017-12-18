@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-
+﻿
 using Foundation;
 using UIKit;
 
@@ -13,10 +10,16 @@ namespace Embedding.iOS
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
             global::Xamarin.Forms.Forms.Init();
-
+            PreserveCustomControls();
             LoadApplication(new App());
 
             return base.FinishedLaunching(app, options);
+        }
+
+        void PreserveCustomControls()
+        {
+            FFImageLoading.Forms.Touch.CachedImageRenderer.Init();
+            CarouselView.FormsPlugin.iOS.CarouselViewRenderer.Init();
         }
     }
 }

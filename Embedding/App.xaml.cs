@@ -1,4 +1,5 @@
 ﻿using Xamarin.Forms;
+using Embedding.ViewModels;
 
 namespace Embedding
 {
@@ -8,7 +9,10 @@ namespace Embedding
         {
             InitializeComponent();
 
-            MainPage = new EmbeddingPage();
+            MainPage = new EmbeddingPage()
+            {
+                BindingContext = new EmbeddingPageViewModel()
+            };
         }
 
         protected override void OnStart()

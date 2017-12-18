@@ -1,11 +1,58 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <ContentPage
-	xmlns="http://xamarin.com/schemas/2014/forms"
-	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-	xmlns:local="clr-namespace:Embedding"
-	x:Class="Embedding.EmbeddingPage">
-	<Label
-		Text="Welcome to Xamarin Forms!"
-		VerticalOptions="Center"
-		HorizontalOptions="Center" />
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:controls="clr-namespace:CarouselView.FormsPlugin.Abstractions;assembly=CarouselView.FormsPlugin.Abstractions"
+    xmlns:ff="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
+    xmlns:converters="clr-namespace:Embedding.Converters"
+    xmlns:vm="clr-namespace:Embedding.ViewModels"
+    x:Class="Embedding.EmbeddingPage">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <converters:ImageFromManagedResourceConverter
+                x:Key="ImageFromManagedResourceConverter" />
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <Grid
+        RowSpacing="0"
+        ColumnSpacing="0">
+        <Grid.RowDefinitions>
+            <RowDefinition
+                Height="3*" />
+            <RowDefinition
+                Height="2*" />
+        </Grid.RowDefinitions>
+        <controls:CarouselViewControl
+            Grid.RowSpan="2"
+            Orientation="Horizontal"
+            Position="{Binding CurrentWalkthroughIndex}"
+            ItemsSource="{Binding Walkthroughs}"
+            VerticalOptions="FillAndExpand"
+            HorizontalOptions="FillAndExpand">
+            <controls:CarouselViewControl.ItemTemplate>
+                <DataTemplate>
+                    <Grid>
+                        <ff:CachedImage
+                            VerticalOptions="Fill"
+                            HorizontalOptions="Fill"
+                            Aspect="Fill"
+                            Source="{Binding Image, Converter={StaticResource ImageFromManagedResourceConverter}}" />
+                    </Grid>
+                </DataTemplate>
+            </controls:CarouselViewControl.ItemTemplate>
+        </controls:CarouselViewControl>
+        <Grid
+            Grid.Row="1"
+            BackgroundColor="White"
+            Padding="32">
+            <Label
+                Text="{Binding CurrentWalkthroughContent}"
+                HorizontalTextAlignment="Center"
+                TextColor="#B2B2B2" />
+            <Button
+                Text="Next"
+                Command="{Binding NextCommand}"
+                VerticalOptions="End" />
+        </Grid>
+    </Grid>
 </ContentPage>
