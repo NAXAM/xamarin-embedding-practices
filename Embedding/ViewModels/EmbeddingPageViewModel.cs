@@ -91,7 +91,8 @@ namespace Embedding.ViewModels
                 return;
             }
 
-            if (await navigationService?.NavigateAsync("end_of_walkthrough") != true)
+            if (navigationService == null ||
+                await navigationService.NavigateAsync("end_of_walkthrough") != true)
             {
                 CurrentWalkthroughIndex = 0;
             }

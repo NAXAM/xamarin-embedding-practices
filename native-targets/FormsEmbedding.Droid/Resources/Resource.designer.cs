@@ -5668,8 +5668,8 @@ namespace FormsEmbedding.Droid
 			// aapt resource value: 0x7f090060
 			public const int image = 2131296352;
 			
-			// aapt resource value: 0x7f0900a2
-			public const int indicator = 2131296418;
+			// aapt resource value: 0x7f0900a1
+			public const int indicator = 2131296417;
 			
 			// aapt resource value: 0x7f0900cb
 			public const int info = 2131296459;
@@ -5698,8 +5698,8 @@ namespace FormsEmbedding.Droid
 			// aapt resource value: 0x7f090062
 			public const int list_item = 2131296354;
 			
-			// aapt resource value: 0x7f09009b
-			public const int lstSessions = 2131296411;
+			// aapt resource value: 0x7f09009a
+			public const int lstSessions = 2131296410;
 			
 			// aapt resource value: 0x7f0900d3
 			public const int masked = 2131296467;
@@ -5794,8 +5794,8 @@ namespace FormsEmbedding.Droid
 			// aapt resource value: 0x7f090026
 			public const int multiply = 2131296294;
 			
-			// aapt resource value: 0x7f09009a
-			public const int my_toolbar = 2131296410;
+			// aapt resource value: 0x7f0900a2
+			public const int my_toolbar = 2131296418;
 			
 			// aapt resource value: 0x7f090094
 			public const int navigation_header_container = 2131296404;
@@ -5803,11 +5803,11 @@ namespace FormsEmbedding.Droid
 			// aapt resource value: 0x7f09003a
 			public const int never = 2131296314;
 			
-			// aapt resource value: 0x7f0900a0
-			public const int next = 2131296416;
+			// aapt resource value: 0x7f09009f
+			public const int next = 2131296415;
 			
-			// aapt resource value: 0x7f0900a1
-			public const int nextArrow = 2131296417;
+			// aapt resource value: 0x7f0900a0
+			public const int nextArrow = 2131296416;
 			
 			// aapt resource value: 0x7f090021
 			public const int none = 2131296289;
@@ -5827,8 +5827,8 @@ namespace FormsEmbedding.Droid
 			// aapt resource value: 0x7f0900a3
 			public const int pageContainer = 2131296419;
 			
-			// aapt resource value: 0x7f09009d
-			public const int pager = 2131296413;
+			// aapt resource value: 0x7f09009c
+			public const int pager = 2131296412;
 			
 			// aapt resource value: 0x7f09004b
 			public const int parallax = 2131296331;
@@ -5842,11 +5842,11 @@ namespace FormsEmbedding.Droid
 			// aapt resource value: 0x7f09004c
 			public const int pin = 2131296332;
 			
-			// aapt resource value: 0x7f09009e
-			public const int prev = 2131296414;
+			// aapt resource value: 0x7f09009d
+			public const int prev = 2131296413;
 			
-			// aapt resource value: 0x7f09009f
-			public const int prevArrow = 2131296415;
+			// aapt resource value: 0x7f09009e
+			public const int prevArrow = 2131296414;
 			
 			// aapt resource value: 0x7f090006
 			public const int progress_circular = 2131296262;
@@ -6037,8 +6037,8 @@ namespace FormsEmbedding.Droid
 			// aapt resource value: 0x7f090013
 			public const int transition_transform = 2131296275;
 			
-			// aapt resource value: 0x7f09009c
-			public const int txtTitle = 2131296412;
+			// aapt resource value: 0x7f09009b
+			public const int txtTitle = 2131296411;
 			
 			// aapt resource value: 0x7f09002c
 			public const int uniform = 2131296300;

@@ -4,6 +4,7 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:ff="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
     x:Class="Embedding.SessionsDetailsPage"
+    BackgroundColor="White"
     Title="Session Details">
     <Grid
         Padding="24,48">
