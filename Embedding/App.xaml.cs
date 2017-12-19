@@ -9,10 +9,7 @@ namespace Embedding
         {
             InitializeComponent();
 
-            MainPage = new EmbeddingPage()
-            {
-                BindingContext = new EmbeddingPageViewModel()
-            };
+            MainPage = new LoginPage();
         }
 
         protected override void OnStart()
